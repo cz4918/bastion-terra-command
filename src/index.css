@@ -191,6 +191,10 @@
   .pulse-glow {
     animation: pulse-glow 2s ease-in-out infinite alternate;
   }
+
+  .hover-scale-102:hover {
+    transform: scale(1.02);
+  }
 }
 
 @keyframes holographic-sweep {
@@ -221,6 +225,15 @@
   }
   22% {
     opacity: 0.8;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
