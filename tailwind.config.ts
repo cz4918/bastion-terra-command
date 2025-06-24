@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -84,11 +85,42 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'holographic-sweep': {
+					'0%': { transform: 'translateX(-100%)' },
+					'100%': { transform: 'translateX(100%)' }
+				},
+				'scanlines': {
+					'0%': { transform: 'translateY(0)' },
+					'100%': { transform: 'translateY(4px)' }
+				},
+				'pulse-glow': {
+					'0%, 100%': {
+						textShadow: '0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor'
+					},
+					'50%': {
+						textShadow: '0 0 2px currentColor, 0 0 5px currentColor, 0 0 8px currentColor'
+					}
+				},
+				'flicker': {
+					'0%, 19%, 21%, 23%, 25%, 54%, 56%, 100%': {
+						opacity: '1'
+					},
+					'20%, 24%, 55%': {
+						opacity: '0.4'
+					},
+					'22%': {
+						opacity: '0.8'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'holographic-sweep': 'holographic-sweep 3s ease-in-out infinite',
+				'scanlines': 'scanlines 2s linear infinite',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite alternate',
+				'flicker': 'flicker 3s linear infinite'
 			}
 		}
 	},
