@@ -1,11 +1,11 @@
 
 import React from 'react';
-import { Shield, Planet, Grid } from 'lucide-react';
+import { Shield, Plane, Grid } from 'lucide-react';
 
 const WidgetLibrary = () => {
   const widgets = [
     { id: 'system-status', name: 'SYSTEM STATUS', icon: Shield, color: 'neon-cyan' },
-    { id: 'xr49-surveillance', name: 'XR-49 SURVEILLANCE', icon: Planet, color: 'neon-green' },
+    { id: 'xr49-surveillance', name: 'XR-49 SURVEILLANCE', icon: Plane, color: 'neon-green' },
     { id: 'atmospheric-data', name: 'ATMOSPHERIC DATA', icon: Shield, color: 'neon-magenta' },
     { id: 'mission-timer', name: 'MISSION TIMER', icon: Shield, color: 'neon-orange' },
     { id: 'resource-levels', name: 'RESOURCE LEVELS', icon: Grid, color: 'neon-green' },

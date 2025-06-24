@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Shield, Planet, Grid } from 'lucide-react';
+import { Shield, Plane, Grid } from 'lucide-react';
 
 interface TabNavigationProps {
   activeTab: string;
@@ -10,7 +9,7 @@ interface TabNavigationProps {
 const TabNavigation = ({ activeTab, onTabChange }: TabNavigationProps) => {
   const tabs = [
     { id: 'life-support', label: 'LIFE SUPPORT', icon: Shield },
-    { id: 'missions', label: 'XR-49 MISSIONS', icon: Planet },
+    { id: 'missions', label: 'XR-49 MISSIONS', icon: Plane },
     { id: 'comms', label: 'COMMS CENTRE', icon: Grid },
   ];
 
